@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_member_members",
+  "info": {
+    "displayName": "member"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "social": {
+      "type": "component",
+      "component": "button.button",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
