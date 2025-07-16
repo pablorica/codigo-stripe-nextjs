@@ -1,0 +1,4 @@
+[submodule "my-next-blog"]
+	path = my-next-blog
+[submodule "my-strapi-blog"]
+	path = my-strapi-blog
