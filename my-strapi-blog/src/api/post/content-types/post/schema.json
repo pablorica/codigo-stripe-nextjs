@@ -14,11 +14,14 @@
     "title": {
       "type": "string"
     },
-    "content": {
-      "type": "blocks"
-    },
     "slug": {
       "type": "uid"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "excerpt": {
+      "type": "blocks"
     },
     "published": {
       "type": "date"

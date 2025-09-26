@@ -69,7 +69,8 @@ export default async function HomePage() {
           <ul className="flex gap-6 text-sm uppercase">
             <li><Link href="/services">Services</Link></li>
             <li><Link href="/portfolio">Portfolio</Link></li>
-            <li><Link href="/blog">Blog</Link></li>
+            <li><Link href="/posts">Blog</Link></li>
+            <li><Link href="/library">Library</Link></li>
             <li><Link href="/contact">Contact</Link></li>
           </ul>
         </nav>

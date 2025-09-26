@@ -1,12 +1,14 @@
 
 import { BlocksRenderer } from '@strapi/blocks-react-renderer';
+import Link from "next/link";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
 interface Post {
   id: number;
   title: string;
-  content: any; // we can refine later if needed
+  slug: string;
+  excerpt: any; // we can refine later if needed
 }
 
 
@@ -23,8 +25,14 @@ export default async function PostsPage() {
           <h1>My Blog</h1>
           {posts.map((post) => (
             <div key={post.id}>
+              
+              <Link href={`posts/${post.slug}`}>
               <h2>{post.title}</h2>
-              <BlocksRenderer content={post.content} />
+              </Link>
+
+
+
+              <BlocksRenderer content={post.excerpt} />
             </div>
           ))}
         </div>

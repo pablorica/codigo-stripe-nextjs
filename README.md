@@ -15,7 +15,8 @@ A modern blog application powered by:
 
 ```bash
 git clone https://github.com/pablorica/codigo-stripe-nextjs.git
-cd my-blog
+mv codigo-stripe-nextjs codigo
+cd codigo
 ```
 
 ---
@@ -167,6 +168,28 @@ If you’re not seeing nested fields like `photo` or `social` in your response:
 * Make sure the field types in Strapi are correctly configured (e.g., media is set to "single media", relations are set properly).
 * Double-check the `populate` structure.
 * Use the API browser at `http://localhost:1337/api/homepages` to confirm the JSON structure.
+
+
+---
+
+##  Increase Nextjs frontend
+
+cd my-next-blog
+npm install react-hot-toast @tailwindcss/typography moment react-icons react-markdown react-loader-spinner remark-gfm rehype-raw react-syntax-highlighter
+
+
+These libraries would be used throughout the application for several purposes.
+
+    react-hot-toast: Provides easy-to-use notifications for user interactions.
+    @tailwindcss/typography: Enhances the typography styles in your application for better readability.
+    moment: A library for parsing, validating, manipulating, and displaying dates and times.
+    react-icons: Offers a comprehensive set of icons for use throughout your application.
+    react-markdown: Renders Markdown content as React components, enabling rich text display.
+    react-loader-spinner: Displays loading indicators to enhance user experience during asynchronous operations.
+    remark-gfm: Enables GitHub Flavored Markdown features, such as tables and strikethroughs, in your Markdown content.
+    rehype-raw: Allows rendering of raw HTML in Markdown, giving flexibility in content formatting.
+    react-syntax-highlighter: Provides syntax highlighting for code snippets in your Markdown content.
+
 
 ---
 
